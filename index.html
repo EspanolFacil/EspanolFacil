@@ -1388,6 +1388,64 @@ function storyLang(button,story,lang){
 newPhrase();
 
 </script>
+<script>
+function speakText(text, lang) {
+  if (!text.trim()) return;
 
+  window.speechSynthesis.cancel();
+
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.lang = lang;
+  speech.rate = 0.9;
+  speech.pitch = 1;
+
+  window.speechSynthesis.speak(speech);
+}
+
+function addVoiceButtons() {
+  const elements = document.querySelectorAll(
+    "p, h1, h2, h3, h4, li, td, th, .word, .phrase, .translation"
+  );
+
+  elements.forEach(el => {
+    if (el.dataset.voiceAdded) return;
+
+    const text = el.innerText.trim();
+    if (!text) return;
+
+    const button = document.createElement("button");
+    button.innerHTML = "🔊";
+    button.type = "button";
+    button.title = "Écouter / استمع";
+
+    button.style.cssText = `
+      margin: 4px;
+      padding: 4px 7px;
+      border: 0;
+      border-radius: 8px;
+      background: #e4002b;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    `;
+
+    button.onclick = function(e) {
+      e.stopPropagation();
+
+      const arabic = /[\u0600-\u06FF]/.test(text);
+
+      speakText(
+        text,
+        arabic ? "ar-MA" : "es-ES"
+      );
+    };
+
+    el.appendChild(button);
+    el.dataset.voiceAdded = "true";
+  });
+}
+
+document.addEventListener("DOMContentLoaded", addVoiceButtons);
+</script>
 </body>
     </html>
