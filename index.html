@@ -2,25 +2,18 @@
 <html lang="ar" dir="rtl">
 
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Español Fácil 🇪🇸 | تعلم الإسبانية بسهولة</title>
 
 <meta name="description"
-content="Español Fácil - تعلم الإسبانية بالعربية والفرنسية والإنجليزية بطريقة سهلة ومجانية.">
+content="Español Fácil - تعلم الإسبانية بالعربية بطريقة سهلة ومجانية.">
 
 <meta name="keywords"
 content="تعلم الإسبانية, Español Fácil, Spanish Arabic, A1 A2 B1 B2">
 
-<meta name="robots"
-content="index, follow">
-
-<meta name="theme-color"
-content="#e4003b">
+<meta name="robots" content="index, follow">
 
 <style>
 
@@ -144,8 +137,7 @@ margin-bottom:30px;
 
 .grid{
 display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(240px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:20px;
 }
 
@@ -226,10 +218,11 @@ border:0;
 background:#e4003b;
 color:white;
 border-radius:10px;
-padding:8px 13px;
+padding:7px 12px;
 cursor:pointer;
-margin-top:8px;
+margin:5px;
 font-weight:bold;
+font-size:15px;
 }
 
 .exercise{
@@ -247,6 +240,7 @@ max-width:500px;
 border:1px solid #ccc;
 border-radius:10px;
 font-size:16px;
+margin:8px 0;
 }
 
 .feedback{
@@ -256,8 +250,7 @@ margin-top:10px;
 
 .video-grid{
 display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:22px;
 }
 
@@ -309,8 +302,7 @@ margin-top:15px;
 
 .word-list{
 display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:12px;
 }
 
@@ -411,50 +403,33 @@ padding:20px;
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
 <header>
 
-<h1>
-Español Fácil 🇪🇸
-</h1>
+<h1>Español Fácil 🇪🇸</h1>
 
-<p
-data-ar="تعلم الإسبانية بسهولة، خطوة بخطوة"
-data-es="Aprende español fácilmente, paso a paso"
-data-en="Learn Spanish easily, step by step"
-data-fr="Apprenez l'espagnol facilement, étape par étape">
-
+<p id="headerText">
 تعلم الإسبانية بسهولة، خطوة بخطوة
-
 </p>
-
 
 <div class="languages">
 
-<button
-class="active"
-onclick="changeLanguage('ar',this)">
+<button class="active" onclick="changeLanguage('ar',this)">
 🇲🇦 العربية
 </button>
 
-<button
-onclick="changeLanguage('es',this)">
+<button onclick="changeLanguage('es',this)">
 🇪🇸 Español
 </button>
 
-<button
-onclick="changeLanguage('en',this)">
+<button onclick="changeLanguage('en',this)">
 🇬🇧 English
 </button>
 
-<button
-onclick="changeLanguage('fr',this)">
+<button onclick="changeLanguage('fr',this)">
 🇫🇷 Français
 </button>
 
@@ -463,56 +438,45 @@ onclick="changeLanguage('fr',this)">
 </header>
 
 
-
 <nav>
 
 <button onclick="go('home')">
-🏠
-<span>الرئيسية</span>
+🏠 الرئيسية
 </button>
 
 <button onclick="go('levels')">
-📚
-<span>المستويات</span>
+📚 المستويات
 </button>
 
 <button onclick="go('words')">
-📝
-<span>الكلمات</span>
+📝 الكلمات
 </button>
 
 <button onclick="go('phrases')">
-💬
-<span>الجمل</span>
+💬 الجمل
 </button>
 
 <button onclick="go('videos')">
-🎥
-<span>الفيديوهات</span>
+🎥 الفيديوهات
 </button>
 
 <button onclick="go('grammar')">
-📖
-<span>القواعد</span>
+📖 القواعد
 </button>
 
 <button onclick="go('exercises')">
-✍️
-<span>التمارين</span>
+✍️ التمارين
 </button>
 
 <button onclick="go('quiz')">
-🧠
-<span>اختبار المستوى</span>
+🧠 الاختبار
 </button>
 
 <button onclick="go('about')">
-🇪🇸
-<span>من نحن</span>
+🇪🇸 من نحن
 </button>
 
 </nav>
-
 
 
 <main>
@@ -530,18 +494,13 @@ onclick="changeLanguage('fr',this)">
 من المستوى A1 حتى B2، بطريقة بسيطة ومجانية.
 </p>
 
-<button
-class="action"
-onclick="go('levels')">
-
+<button class="action" onclick="go('levels')">
 🚀 ابدأ التعلم
-
 </button>
 
 </div>
 
 </section>
-
 
 
 <section id="levels">
@@ -556,17 +515,12 @@ onclick="go('levels')">
 اختار المستوى المناسب ليك
 </p>
 
-
 <div class="grid">
 
 
-<div
-class="card level-card"
-onclick="go('a1')">
+<div class="card level-card" onclick="go('a1')">
 
-<div class="level-icon">
-📗
-</div>
+<div class="level-icon">📗</div>
 
 <h3>A1</h3>
 
@@ -577,14 +531,9 @@ onclick="go('a1')">
 </div>
 
 
+<div class="card level-card" onclick="go('a2')">
 
-<div
-class="card level-card"
-onclick="go('a2')">
-
-<div class="level-icon">
-📘
-</div>
+<div class="level-icon">📘</div>
 
 <h3>A2</h3>
 
@@ -595,14 +544,9 @@ onclick="go('a2')">
 </div>
 
 
+<div class="card level-card" onclick="go('b1')">
 
-<div
-class="card level-card"
-onclick="go('b1')">
-
-<div class="level-icon">
-📙
-</div>
+<div class="level-icon">📙</div>
 
 <h3>B1</h3>
 
@@ -613,14 +557,9 @@ onclick="go('b1')">
 </div>
 
 
+<div class="card level-card" onclick="go('b2')">
 
-<div
-class="card level-card"
-onclick="go('b2')">
-
-<div class="level-icon">
-📕
-</div>
+<div class="level-icon">📕</div>
 
 <h3>B2</h3>
 
@@ -638,7 +577,6 @@ onclick="go('b2')">
 </section>
 
 
-
 <section id="a1">
 
 <div class="container">
@@ -647,129 +585,139 @@ onclick="go('b2')">
 📗 A1 – المبتدئ
 </h2>
 
-
 <div class="grid">
 
 
 <div class="card">
 
-<h3>
-👋 التحية
-</h3>
+<h3>👋 التحية</h3>
 
 <p>
 <b>Hola</b> = مرحباً
+<button class="speak" onclick="speakPair('Hola','مرحباً')">🔊</button>
 </p>
 
 <p>
 <b>Buenos días</b> = صباح الخير
+<button class="speak" onclick="speakPair('Buenos días','صباح الخير')">🔊</button>
 </p>
 
 <p>
 <b>Buenas tardes</b> = مساء الخير
+<button class="speak" onclick="speakPair('Buenas tardes','مساء الخير')">🔊</button>
 </p>
 
 <p>
 <b>¿Cómo estás?</b> = كيف حالك؟
+<button class="speak" onclick="speakPair('¿Cómo estás?','كيف حالك؟')">🔊</button>
 </p>
 
 <p>
 <b>Estoy bien</b> = أنا بخير
+<button class="speak" onclick="speakPair('Estoy bien','أنا بخير')">🔊</button>
 </p>
 
 </div>
-
 
 
 <div class="card">
 
-<h3>
-🔢 الأرقام
-</h3>
+<h3>🔢 الأرقام</h3>
 
 <p>
-Uno = واحد
+<b>Uno</b> = واحد
+<button class="speak" onclick="speakPair('Uno','واحد')">🔊</button>
 </p>
 
 <p>
-Dos = اثنان
+<b>Dos</b> = اثنان
+<button class="speak" onclick="speakPair('Dos','اثنان')">🔊</button>
 </p>
 
 <p>
-Tres = ثلاثة
+<b>Tres</b> = ثلاثة
+<button class="speak" onclick="speakPair('Tres','ثلاثة')">🔊</button>
 </p>
 
 <p>
-Cuatro = أربعة
+<b>Cuatro</b> = أربعة
+<button class="speak" onclick="speakPair('Cuatro','أربعة')">🔊</button>
 </p>
 
 <p>
-Cinco = خمسة
+<b>Cinco</b> = خمسة
+<button class="speak" onclick="speakPair('Cinco','خمسة')">🔊</button>
 </p>
 
 <p>
-Seis = ستة
+<b>Seis</b> = ستة
+<button class="speak" onclick="speakPair('Seis','ستة')">🔊</button>
 </p>
 
 <p>
-Siete = سبعة
+<b>Siete</b> = سبعة
+<button class="speak" onclick="speakPair('Siete','سبعة')">🔊</button>
 </p>
 
 <p>
-Ocho = ثمانية
+<b>Ocho</b> = ثمانية
+<button class="speak" onclick="speakPair('Ocho','ثمانية')">🔊</button>
 </p>
 
 <p>
-Nueve = تسعة
+<b>Nueve</b> = تسعة
+<button class="speak" onclick="speakPair('Nueve','تسعة')">🔊</button>
 </p>
 
 <p>
-Diez = عشرة
+<b>Diez</b> = عشرة
+<button class="speak" onclick="speakPair('Diez','عشرة')">🔊</button>
 </p>
 
 </div>
-
 
 
 <div class="card">
 
-<h3>
-👨‍👩‍👦 العائلة
-</h3>
+<h3>👨‍👩‍👦 العائلة</h3>
 
 <p>
-Padre = الأب
+<b>Padre</b> = الأب
+<button class="speak" onclick="speakPair('Padre','الأب')">🔊</button>
 </p>
 
 <p>
-Madre = الأم
+<b>Madre</b> = الأم
+<button class="speak" onclick="speakPair('Madre','الأم')">🔊</button>
 </p>
 
 <p>
-Hermano = الأخ
+<b>Hermano</b> = الأخ
+<button class="speak" onclick="speakPair('Hermano','الأخ')">🔊</button>
 </p>
 
 <p>
-Hermana = الأخت
+<b>Hermana</b> = الأخت
+<button class="speak" onclick="speakPair('Hermana','الأخت')">🔊</button>
 </p>
 
 <p>
-Hijo = الابن
+<b>Hijo</b> = الابن
+<button class="speak" onclick="speakPair('Hijo','الابن')">🔊</button>
 </p>
 
 <p>
-Hija = الابنة
+<b>Hija</b> = الابنة
+<button class="speak" onclick="speakPair('Hija','الابنة')">🔊</button>
 </p>
 
 </div>
-
 
 </div>
 
 </div>
 
 </section>
-
 
 
 <section id="a2">
@@ -780,89 +728,89 @@ Hija = الابنة
 📘 A2 – مبتدئ متقدم
 </h2>
 
-
 <div class="grid">
 
 
 <div class="card">
 
-<h3>
-🛒 التسوق
-</h3>
+<h3>🛒 التسوق</h3>
 
 <p>
 <b>¿Cuánto cuesta?</b> = كم الثمن؟
+<button class="speak" onclick="speakPair('¿Cuánto cuesta?','كم الثمن؟')">🔊</button>
 </p>
 
 <p>
 <b>Quiero comprar esto.</b> = أريد شراء هذا.
+<button class="speak" onclick="speakPair('Quiero comprar esto.','أريد شراء هذا.')">🔊</button>
 </p>
 
 <p>
 <b>Es demasiado caro.</b> = هذا غالي جداً.
+<button class="speak" onclick="speakPair('Es demasiado caro.','هذا غالي جداً.')">🔊</button>
 </p>
 
 <p>
 <b>¿Tiene otro color?</b> = هل عندك لون آخر؟
+<button class="speak" onclick="speakPair('¿Tiene otro color?','هل عندك لون آخر؟')">🔊</button>
 </p>
 
 </div>
 
 
-
 <div class="card">
 
-<h3>
-🍽️ المطعم
-</h3>
+<h3>🍽️ المطعم</h3>
 
 <p>
 <b>Quiero una mesa.</b> = أريد طاولة.
+<button class="speak" onclick="speakPair('Quiero una mesa.','أريد طاولة.')">🔊</button>
 </p>
 
 <p>
 <b>La carta, por favor.</b> = القائمة من فضلك.
+<button class="speak" onclick="speakPair('La carta, por favor.','القائمة من فضلك.')">🔊</button>
 </p>
 
 <p>
 <b>Quiero agua.</b> = أريد الماء.
+<button class="speak" onclick="speakPair('Quiero agua.','أريد الماء.')">🔊</button>
 </p>
 
 <p>
 <b>La cuenta, por favor.</b> = الحساب من فضلك.
+<button class="speak" onclick="speakPair('La cuenta, por favor.','الحساب من فضلك.')">🔊</button>
 </p>
 
 </div>
-
 
 
 <div class="card">
 
-<h3>
-🚌 المواصلات
-</h3>
+<h3>🚌 المواصلات</h3>
 
 <p>
 <b>¿Dónde está la estación?</b> = أين توجد المحطة؟
+<button class="speak" onclick="speakPair('¿Dónde está la estación?','أين توجد المحطة؟')">🔊</button>
 </p>
 
 <p>
 <b>¿Cuánto cuesta el billete?</b> = كم ثمن التذكرة؟
+<button class="speak" onclick="speakPair('¿Cuánto cuesta el billete?','كم ثمن التذكرة؟')">🔊</button>
 </p>
 
 <p>
 <b>Quiero ir al centro.</b> = أريد الذهاب إلى وسط المدينة.
+<button class="speak" onclick="speakPair('Quiero ir al centro.','أريد الذهاب إلى وسط المدينة.')">🔊</button>
 </p>
 
 </div>
-
 
 </div>
 
 </div>
 
 </section>
-
 
 
 <section id="b1">
@@ -873,124 +821,117 @@ Hija = الابنة
 📙 B1 – المستوى المتوسط
 </h2>
 
-
 <div class="grid">
 
 
 <div class="card">
 
-<h3>
-💬 المحادثة
-</h3>
+<h3>💬 المحادثة</h3>
 
 <p>
 <b>¿Qué opinas?</b> = ما رأيك؟
+<button class="speak" onclick="speakPair('¿Qué opinas?','ما رأيك؟')">🔊</button>
 </p>
 
 <p>
 <b>En mi opinión...</b> = في رأيي...
+<button class="speak" onclick="speakPair('En mi opinión...','في رأيي...')">🔊</button>
 </p>
 
 <p>
 <b>Estoy de acuerdo.</b> = أتفق.
+<button class="speak" onclick="speakPair('Estoy de acuerdo.','أتفق.')">🔊</button>
 </p>
 
 <p>
 <b>No estoy de acuerdo.</b> = لا أتفق.
+<button class="speak" onclick="speakPair('No estoy de acuerdo.','لا أتفق.')">🔊</button>
 </p>
 
 <p>
 <b>Creo que...</b> = أعتقد أن...
+<button class="speak" onclick="speakPair('Creo que...','أعتقد أن...')">🔊</button>
 </p>
 
 </div>
-
 
 
 <div class="card">
 
-<h3>
-🧠 مفردات B1
-</h3>
+<h3>🧠 مفردات B1</h3>
 
 <p>
-Experiencia = تجربة
+<b>Experiencia</b> = تجربة
+<button class="speak" onclick="speakPair('Experiencia','تجربة')">🔊</button>
 </p>
 
 <p>
-Oportunidad = فرصة
+<b>Oportunidad</b> = فرصة
+<button class="speak" onclick="speakPair('Oportunidad','فرصة')">🔊</button>
 </p>
 
 <p>
-Decisión = قرار
+<b>Decisión</b> = قرار
+<button class="speak" onclick="speakPair('Decisión','قرار')">🔊</button>
 </p>
 
 <p>
-Problema = مشكلة
+<b>Problema</b> = مشكلة
+<button class="speak" onclick="speakPair('Problema','مشكلة')">🔊</button>
 </p>
 
 <p>
-Solución = حل
+<b>Solución</b> = حل
+<button class="speak" onclick="speakPair('Solución','حل')">🔊</button>
 </p>
 
 <p>
-Necesidad = حاجة
+<b>Necesidad</b> = حاجة
+<button class="speak" onclick="speakPair('Necesidad','حاجة')">🔊</button>
 </p>
 
 </div>
-
 
 
 <div class="card">
 
-<h3>
-✍️ الكتابة
-</h3>
+<h3>✍️ الكتابة</h3>
 
-<p>
-تعلم كتابة رسالة قصيرة.
-</p>
-
-<p>
-تعلم وصف تجربة.
-</p>
-
-<p>
-تعلم التعبير عن رأيك.
-</p>
-
-<p>
-تعلم شرح مشكلة واقتراح حل.
-</p>
+<p>تعلم كتابة رسالة قصيرة.</p>
+<p>تعلم وصف تجربة.</p>
+<p>تعلم التعبير عن رأيك.</p>
+<p>تعلم شرح مشكلة واقتراح حل.</p>
 
 </div>
-
 
 </div>
 
 
 <div class="phrase">
 
-<h3>
-🗣️ مثال B1
-</h3>
+<h3>🗣️ مثال B1</h3>
 
 <p>
-<b>Español:</b>
-Creo que aprender idiomas es muy importante porque nos permite conocer nuevas personas y nuevas culturas.
+<b>Creo que aprender idiomas es muy importante porque nos permite conocer nuevas personas y nuevas culturas.</b>
 </p>
 
 <p>
-<b>العربية:</b>
 أعتقد أن تعلم اللغات مهم جداً لأنه يسمح لنا بالتعرف على أشخاص وثقافات جديدة.
 </p>
+
+<button class="speak"
+onclick="speakPair(
+'Creo que aprender idiomas es muy importante porque nos permite conocer nuevas personas y nuevas culturas.',
+'أعتقد أن تعلم اللغات مهم جداً لأنه يسمح لنا بالتعرف على أشخاص وثقافات جديدة.'
+)">
+🔊 استمع
+</button>
 
 </div>
 
 </div>
 
 </section>
-
 
 
 <section id="b2">
@@ -1002,16 +943,13 @@ Creo que aprender idiomas es muy importante porque nos permite conocer nuevas pe
 </h2>
 
 <p class="section-subtitle">
-قصص بالإسبانية + ترجمة + كلمات + أسئلة
+قصص بالإسبانية + ترجمة + كلمات + استماع
 </p>
 
 
+<div class="story">
 
-<div class="story" id="story1">
-
-<h3>
-📖 القصة 1: Un viaje inesperado
-</h3>
+<h3>📖 القصة 1: Un viaje inesperado</h3>
 
 <div class="story-original">
 
@@ -1031,39 +969,7 @@ Cuando llegó, descubrió que el lugar era mucho más bonito de lo que imaginaba
 
 </div>
 
-
-
-<div class="tabs">
-
-<button
-class="active"
-onclick="storyLang(this,'story1','ar')">
-
-🇲🇦 عربي
-
-</button>
-
-<button
-onclick="storyLang(this,'story1','fr')">
-
-🇫🇷 Français
-
-</button>
-
-<button
-onclick="storyLang(this,'story1','en')">
-
-🇬🇧 English
-
-</button>
-
-</div>
-
-
-
-<div
-id="story1-ar"
-class="translation-box">
+<div class="translation-box">
 
 <b>العربية:</b>
 
@@ -1085,99 +991,44 @@ class="translation-box">
 
 </div>
 
-
-
-<div
-id="story1-fr"
-class="translation-box hidden">
-
-<b>Français :</b>
-
-<br><br>
-
-Un jour, Carlos décida de voyager dans une petite ville qu'il n'avait jamais visitée.
-
-<br><br>
-
-Il prépara sa valise, acheta un billet de train et partit tôt le matin.
-
-<br><br>
-
-Pendant le voyage, il rencontra une femme qui lui raconta plusieurs histoires intéressantes sur la ville.
-
-<br><br>
-
-Lorsqu'il arriva, il découvrit que l'endroit était beaucoup plus beau qu'il ne l'imaginait.
-
-</div>
-
-
-
-<div
-id="story1-en"
-class="translation-box hidden">
-
-<b>English:</b>
-
-<br><br>
-
-One day, Carlos decided to travel to a small city he had never visited.
-
-<br><br>
-
-He packed his suitcase, bought a train ticket and left early in the morning.
-
-<br><br>
-
-During the journey, he met a woman who told him many interesting stories about the city.
-
-<br><br>
-
-When he arrived, he discovered that the place was much more beautiful than he had imagined.
-
-</div>
-
-
 <p>
-
 <b>📚 كلمات جديدة:</b>
-
 </p>
 
 <p>
-
-Decidir = يقرر |
-
-Viajar = يسافر |
-
-Maleta = حقيبة |
-
-Billete = تذكرة |
-
-Descubrir = يكتشف |
-
-Imaginar = يتخيل
-
+<b>Decidir</b> = يقرر
+<button class="speak" onclick="speakPair('Decidir','يقرر')">🔊</button>
 </p>
 
+<p>
+<b>Viajar</b> = يسافر
+<button class="speak" onclick="speakPair('Viajar','يسافر')">🔊</button>
+</p>
 
-<button
-class="story-speak speak"
-data-story="Un día, Carlos decidió viajar a una pequeña ciudad que nunca había visitado. Preparó su maleta, compró un billete de tren y salió temprano por la mañana.">
+<p>
+<b>Maleta</b> = حقيبة
+<button class="speak" onclick="speakPair('Maleta','حقيبة')">🔊</button>
+</p>
 
+<p>
+<b>Billete</b> = تذكرة
+<button class="speak" onclick="speakPair('Billete','تذكرة')">🔊</button>
+</p>
+
+<button class="speak"
+onclick="speakPair(
+'Un día, Carlos decidió viajar a una pequeña ciudad que nunca había visitado. Preparó su maleta, compró un billete de tren y salió temprano por la mañana.',
+'في أحد الأيام، قرر كارلوس السفر إلى مدينة صغيرة لم يزرها من قبل. جهز حقيبته واشترى تذكرة القطار وغادر في الصباح الباكر.'
+)">
 🔊 استمع للقصة
-
 </button>
 
 </div>
 
 
+<div class="story">
 
-<div class="story" id="story2">
-
-<h3>
-📖 القصة 2: Una nueva oportunidad
-</h3>
+<h3>📖 القصة 2: Una nueva oportunidad</h3>
 
 <div class="story-original">
 
@@ -1205,39 +1056,7 @@ Dos días después, recibió una llamada con una buena noticia: había conseguid
 
 </div>
 
-
-
-<div class="tabs">
-
-<button
-class="active"
-onclick="storyLang(this,'story2','ar')">
-
-🇲🇦 عربي
-
-</button>
-
-<button
-onclick="storyLang(this,'story2','fr')">
-
-🇫🇷 Français
-
-</button>
-
-<button
-onclick="storyLang(this,'story2','en')">
-
-🇬🇧 English
-
-</button>
-
-</div>
-
-
-
-<div
-id="story2-ar"
-class="translation-box">
+<div class="translation-box">
 
 <b>العربية:</b>
 
@@ -1267,106 +1086,32 @@ class="translation-box">
 
 </div>
 
-
-
-<div
-id="story2-fr"
-class="translation-box hidden">
-
-<b>Français :</b>
-
-<br><br>
-
-Maria cherchait du travail depuis plusieurs mois.
-
-<br><br>
-
-Un lundi, elle reçut un appel d'une entreprise qui avait vu son CV.
-
-<br><br>
-
-Ils l'invitèrent à un entretien pour le lendemain.
-
-<br><br>
-
-Maria était nerveuse, mais elle décida de bien se préparer.
-
-<br><br>
-
-Pendant l'entretien, elle parla de son expérience et de ses objectifs.
-
-<br><br>
-
-Deux jours plus tard, elle reçut un appel avec une bonne nouvelle : elle avait obtenu le poste.
-
-</div>
-
-
-
-<div
-id="story2-en"
-class="translation-box hidden">
-
-<b>English:</b>
-
-<br><br>
-
-Maria had been looking for a job for several months.
-
-<br><br>
-
-One Monday, she received a call from a company that had seen her CV.
-
-<br><br>
-
-They invited her to an interview for the next day.
-
-<br><br>
-
-Maria was nervous, but she decided to prepare very well.
-
-<br><br>
-
-During the interview, she talked about her experience and her goals.
-
-<br><br>
-
-Two days later, she received a call with good news: she had got the job.
-
-</div>
-
-
 <p>
-
-<b>📚 كلمات جديدة:</b>
-
+<b>Buscar</b> = يبحث
+<button class="speak" onclick="speakPair('Buscar','يبحث')">🔊</button>
 </p>
 
 <p>
-
-Buscar = يبحث |
-
-Trabajo = عمل |
-
-Currículum = سيرة ذاتية |
-
-Entrevista = مقابلة |
-
-Experiencia = خبرة |
-
-Objetivo = هدف |
-
-Conseguir = يحصل على
-
+<b>Trabajo</b> = عمل
+<button class="speak" onclick="speakPair('Trabajo','عمل')">🔊</button>
 </p>
 
+<p>
+<b>Entrevista</b> = مقابلة
+<button class="speak" onclick="speakPair('Entrevista','مقابلة')">🔊</button>
+</p>
 
-<button
-class="story-speak speak"
-data-story="María llevaba varios meses buscando trabajo. Un lunes recibió una llamada de una empresa que había visto su currículum.">
+<p>
+<b>Experiencia</b> = خبرة
+<button class="speak" onclick="speakPair('Experiencia','خبرة')">🔊</button>
+</p>
 
-🔊 استمع
-
+<button class="speak"
+onclick="speakPair(
+'María llevaba varios meses buscando trabajo. Un lunes recibió una llamada de una empresa que había visto su currículum.',
+'كانت ماريا تبحث عن عمل منذ عدة أشهر. وفي يوم الاثنين تلقت اتصالاً من شركة كانت قد شاهدت سيرتها الذاتية.'
+)">
+🔊 استمع للقصة
 </button>
 
 </div>
@@ -1374,7 +1119,6 @@ data-story="María llevaba varios meses buscando trabajo. Un lunes recibió una 
 </div>
 
 </section>
-
 
 
 <section id="words">
@@ -1387,205 +1131,137 @@ data-story="María llevaba varios meses buscando trabajo. Un lunes recibió una 
 
 <div class="search-box">
 
-<input
-id="searchInput"
+<input id="searchInput"
 placeholder="ابحث عن كلمة بالإسبانية...">
 
-<button
-onclick="searchWord()">
-
+<button onclick="searchWord()">
 🔎 بحث
-
 </button>
 
 </div>
 
-
-<div
-id="searchResult"
-class="result">
-</div>
-
+<div id="searchResult" class="result"></div>
 
 <div class="word-list">
 
 
 <div class="word">
-
 <b>Hola</b>
-
 <br>
-
 مرحباً
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Hola','مرحباً')">
 🔊
 </button>
-
 </div>
 
 
-
 <div class="word">
-
 <b>Gracias</b>
-
 <br>
-
 شكراً
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Gracias','شكراً')">
 🔊
 </button>
-
 </div>
 
 
-
 <div class="word">
-
 <b>Por favor</b>
-
 <br>
-
 من فضلك
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Por favor','من فضلك')">
 🔊
 </button>
-
 </div>
 
 
-
 <div class="word">
-
 <b>Agua</b>
-
 <br>
-
 ماء
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Agua','ماء')">
 🔊
 </button>
-
 </div>
 
 
-
 <div class="word">
-
 <b>Casa</b>
-
 <br>
-
 منزل
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Casa','منزل')">
 🔊
 </button>
-
 </div>
 
 
-
 <div class="word">
-
 <b>Trabajo</b>
-
 <br>
-
 عمل
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Trabajo','عمل')">
 🔊
 </button>
-
 </div>
 
 
-
 <div class="word">
-
 <b>Amigo</b>
-
 <br>
-
 صديق
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Amigo','صديق')">
 🔊
 </button>
-
 </div>
 
 
-
 <div class="word">
-
 <b>Comida</b>
-
 <br>
-
 طعام
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Comida','طعام')">
 🔊
 </button>
-
 </div>
 
 
-
 <div class="word">
-
 <b>Tiempo</b>
-
 <br>
-
 وقت
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Tiempo','وقت')">
 🔊
 </button>
-
 </div>
 
 
-
 <div class="word">
-
 <b>Familia</b>
-
 <br>
-
 عائلة
-
 <br>
-
-<button class="speak">
+<button class="speak"
+onclick="speakPair('Familia','عائلة')">
 🔊
 </button>
-
 </div>
 
 
@@ -1594,7 +1270,6 @@ class="result">
 </div>
 
 </section>
-
 
 
 <section id="phrases">
@@ -1605,15 +1280,12 @@ class="result">
 💬 الجمل والمحادثة
 </h2>
 
-
 <div class="grid">
 
 
 <div class="card">
 
-<h3>
-👋 التعارف
-</h3>
+<h3>👋 التعارف</h3>
 
 <p>
 <b>Hola, ¿cómo te llamas?</b>
@@ -1623,6 +1295,14 @@ class="result">
 مرحباً، ما اسمك؟
 </p>
 
+<button class="speak"
+onclick="speakPair(
+'Hola, ¿cómo te llamas?',
+'مرحباً، ما اسمك؟'
+)">
+🔊
+</button>
+
 <p>
 <b>Me llamo Ahmed.</b>
 </p>
@@ -1631,15 +1311,20 @@ class="result">
 اسمي أحمد.
 </p>
 
-</div>
+<button class="speak"
+onclick="speakPair(
+'Me llamo Ahmed.',
+'اسمي أحمد.'
+)">
+🔊
+</button>
 
+</div>
 
 
 <div class="card">
 
-<h3>
-🏠 الحياة اليومية
-</h3>
+<h3>🏠 الحياة اليومية</h3>
 
 <p>
 <b>¿Dónde vives?</b>
@@ -1649,6 +1334,14 @@ class="result">
 أين تسكن؟
 </p>
 
+<button class="speak"
+onclick="speakPair(
+'¿Dónde vives?',
+'أين تسكن؟'
+)">
+🔊
+</button>
+
 <p>
 <b>Vivo en España.</b>
 </p>
@@ -1657,15 +1350,20 @@ class="result">
 أسكن في إسبانيا.
 </p>
 
-</div>
+<button class="speak"
+onclick="speakPair(
+'Vivo en España.',
+'أسكن في إسبانيا.'
+)">
+🔊
+</button>
 
+</div>
 
 
 <div class="card">
 
-<h3>
-💼 العمل
-</h3>
+<h3>💼 العمل</h3>
 
 <p>
 <b>¿Dónde trabajas?</b>
@@ -1675,6 +1373,14 @@ class="result">
 أين تعمل؟
 </p>
 
+<button class="speak"
+onclick="speakPair(
+'¿Dónde trabajas?',
+'أين تعمل؟'
+)">
+🔊
+</button>
+
 <p>
 <b>Trabajo en una empresa.</b>
 </p>
@@ -1682,6 +1388,14 @@ class="result">
 <p>
 أعمل في شركة.
 </p>
+
+<button class="speak"
+onclick="speakPair(
+'Trabajo en una empresa.',
+'أعمل في شركة.'
+)">
+🔊
+</button>
 
 </div>
 
@@ -1691,19 +1405,20 @@ class="result">
 
 <div class="phrase">
 
-<h3>
-⭐ جملة اليوم
-</h3>
+<h3>⭐ جملة اليوم</h3>
 
 <p id="dailyPhrase">
+<b>Hola, ¿cómo estás?</b>
+=
+مرحبا، كيف حالك؟
 </p>
 
-<button
-class="action"
-onclick="newPhrase()">
-
-🔄 جملة أخرى
-
+<button class="speak"
+onclick="speakPair(
+'Hola, ¿cómo estás?',
+'مرحبا، كيف حالك؟'
+)">
+🔊 استمع
 </button>
 
 </div>
@@ -1711,7 +1426,6 @@ onclick="newPhrase()">
 </div>
 
 </section>
-
 
 
 <section id="videos">
@@ -1726,7 +1440,6 @@ onclick="newPhrase()">
 فيديوهات للمساعدة في تعلم الإسبانية والاستماع والنطق
 </p>
 
-
 <div class="video-grid">
 
 
@@ -1740,9 +1453,7 @@ allowfullscreen>
 
 <div class="video-info">
 
-<h3>
-🇪🇸 الإسبانية من الصفر
-</h3>
+<h3>🇪🇸 الإسبانية من الصفر</h3>
 
 <p>
 جمل وأسئلة مفيدة للمبتدئين.
@@ -1751,7 +1462,6 @@ allowfullscreen>
 </div>
 
 </div>
-
 
 
 <div class="video-card">
@@ -1764,9 +1474,7 @@ allowfullscreen>
 
 <div class="video-info">
 
-<h3>
-💬 المحادثة اليومية
-</h3>
+<h3>💬 المحادثة اليومية</h3>
 
 <p>
 أسئلة مهمة للتدرب على المحادثة.
@@ -1775,7 +1483,6 @@ allowfullscreen>
 </div>
 
 </div>
-
 
 
 <div class="video-card">
@@ -1788,9 +1495,7 @@ allowfullscreen>
 
 <div class="video-info">
 
-<h3>
-📚 العبارات اليومية
-</h3>
+<h3>📚 العبارات اليومية</h3>
 
 <p>
 عبارات وجمل مستعملة في الحياة اليومية.
@@ -1808,9 +1513,616 @@ allowfullscreen>
 </section>
 
 
-
 <section id="grammar">
 
 <div class="container">
 
-<h
+<h2 class="section-title">
+📖 القواعد
+</h2>
+
+<p class="section-subtitle">
+قواعد إسبانية بسيطة ومهمة
+</p>
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>🔹 فعل Ser</h3>
+
+<p>
+<b>Yo soy</b> = أنا أكون
+<button class="speak"
+onclick="speakPair('Yo soy','أنا أكون')">
+🔊
+</button>
+</p>
+
+<p>
+<b>Tú eres</b> = أنت تكون
+<button class="speak"
+onclick="speakPair('Tú eres','أنت تكون')">
+🔊
+</button>
+</p>
+
+<p>
+<b>Él es</b> = هو يكون
+<button class="speak"
+onclick="speakPair('Él es','هو يكون')">
+🔊
+</button>
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔹 فعل Estar</h3>
+
+<p>
+<b>Estoy bien</b> = أنا بخير
+<button class="speak"
+onclick="speakPair('Estoy bien','أنا بخير')">
+🔊
+</button>
+</p>
+
+<p>
+<b>Estoy en casa</b> = أنا في المنزل
+<button class="speak"
+onclick="speakPair('Estoy en casa','أنا في المنزل')">
+🔊
+</button>
+</p>
+
+<p>
+<b>¿Dónde estás?</b> = أين أنت؟
+<button class="speak"
+onclick="speakPair('¿Dónde estás?','أين أنت؟')">
+🔊
+</button>
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🔹 المضارع</h3>
+
+<p>
+<b>Yo trabajo</b> = أنا أعمل
+<button class="speak"
+onclick="speakPair('Yo trabajo','أنا أعمل')">
+🔊
+</button>
+</p>
+
+<p>
+<b>Yo vivo</b> = أنا أعيش
+<button class="speak"
+onclick="speakPair('Yo vivo','أنا أعيش')">
+🔊
+</button>
+</p>
+
+<p>
+<b>Yo estudio</b> = أنا أدرس
+<button class="speak"
+onclick="speakPair('Yo estudio','أنا أدرس')">
+🔊
+</button>
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="exercises">
+
+<div class="container">
+
+<h2 class="section-title">
+✍️ التمارين
+</h2>
+
+<p class="section-subtitle">
+جاوب على الأسئلة وتحقق من جوابك
+</p>
+
+
+<div class="exercise">
+
+<h3>
+1️⃣ ترجم إلى الإسبانية
+</h3>
+
+<p>
+مرحبا
+</p>
+
+<input
+id="ex1"
+placeholder="اكتب الجواب بالإسبانية">
+
+<br>
+
+<button class="action"
+onclick="checkAnswer('ex1','hola','fb1')">
+تحقق
+</button>
+
+<div id="fb1" class="feedback"></div>
+
+</div>
+
+
+<div class="exercise">
+
+<h3>
+2️⃣ ترجم إلى الإسبانية
+</h3>
+
+<p>
+صباح الخير
+</p>
+
+<input
+id="ex2"
+placeholder="اكتب الجواب بالإسبانية">
+
+<br>
+
+<button class="action"
+onclick="checkAnswer('ex2','buenos dias','fb2')">
+تحقق
+</button>
+
+<div id="fb2" class="feedback"></div>
+
+</div>
+
+
+<div class="exercise">
+
+<h3>
+3️⃣ ترجم إلى العربية
+</h3>
+
+<p>
+<b>¿Cómo estás?</b>
+</p>
+
+<input
+id="ex3"
+placeholder="اكتب الجواب بالعربية">
+
+<br>
+
+<button class="action"
+onclick="checkAnswer('ex3','كيف حالك','fb3')">
+تحقق
+</button>
+
+<div id="fb3" class="feedback"></div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="quiz">
+
+<div class="container">
+
+<h2 class="section-title">
+🧠 اختبار المستوى
+</h2>
+
+<p class="section-subtitle">
+اختبار صغير للتدرب
+</p>
+
+<div class="exercise">
+
+<h3>
+ما معنى <b>Agua</b>؟
+</h3>
+
+<button class="quiz-option"
+onclick="quizAnswer(this,true)">
+ماء
+</button>
+
+<button class="quiz-option"
+onclick="quizAnswer(this,false)">
+منزل
+</button>
+
+<button class="quiz-option"
+onclick="quizAnswer(this,false)">
+عمل
+</button>
+
+<div id="quizFeedback" class="feedback"></div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<div class="container">
+
+<div class="about">
+
+<h2 class="section-title">
+🇪🇸 من نحن
+</h2>
+
+<p>
+Español Fácil هو موقع تعليمي لمساعدة الناطقين بالعربية على تعلم الإسبانية خطوة بخطوة.
+</p>
+
+<p>
+المحتوى يشمل الكلمات، الجمل، القواعد، القصص، الاستماع والتمارين.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<p>
+🇪🇸 Español Fácil
+</p>
+
+<p>
+تعلم الإسبانية بسهولة وبطريقة بسيطة.
+</p>
+
+</footer>
+
+
+<script>
+
+
+/* =========================
+   التنقل
+========================= */
+
+function go(id){
+
+const element=document.getElementById(id);
+
+if(element){
+
+element.scrollIntoView({
+behavior:"smooth",
+block:"start"
+});
+
+}
+
+}
+
+
+/* =========================
+   تغيير اللغة
+========================= */
+
+function changeLanguage(lang,button){
+
+document.documentElement.lang=lang;
+
+document.documentElement.dir=
+lang==="ar" ? "rtl" : "ltr";
+
+
+document.querySelectorAll(
+".languages button"
+).forEach(function(btn){
+
+btn.classList.remove("active");
+
+});
+
+
+if(button){
+
+button.classList.add("active");
+
+}
+
+
+const text={
+ar:"تعلم الإسبانية بسهولة، خطوة بخطوة",
+es:"Aprende español fácilmente, paso a paso",
+en:"Learn Spanish easily, step by step",
+fr:"Apprenez l'espagnol facilement, étape par étape"
+};
+
+
+const headerText=
+document.getElementById("headerText");
+
+if(headerText){
+
+headerText.textContent=text[lang];
+
+}
+
+}
+
+
+/* =========================
+   الصوت
+   العربية أولا
+   ثم الإسبانية
+   و = لا يتنطق
+========================= */
+
+function speakPair(spanish,arabic){
+
+if(!("speechSynthesis" in window)){
+
+alert(
+"النطق غير مدعوم فهاد المتصفح."
+);
+
+return;
+
+}
+
+
+speechSynthesis.cancel();
+
+
+const arabicText=
+(arabic || "")
+.replace(/=/g,"")
+.trim();
+
+
+const spanishText=
+(spanish || "")
+.replace(/=/g,"")
+.trim();
+
+
+const arabicVoice=
+new SpeechSynthesisUtterance(
+arabicText
+);
+
+arabicVoice.lang="ar-MA";
+
+arabicVoice.rate=0.85;
+
+
+const spanishVoice=
+new SpeechSynthesisUtterance(
+spanishText
+);
+
+spanishVoice.lang="es-ES";
+
+spanishVoice.rate=0.85;
+
+
+arabicVoice.onend=function(){
+
+if(spanishText){
+
+speechSynthesis.speak(
+spanishVoice
+);
+
+}
+
+};
+
+
+if(arabicText){
+
+speechSynthesis.speak(
+arabicVoice
+);
+
+}else{
+
+speechSynthesis.speak(
+spanishVoice
+);
+
+}
+
+}
+
+
+/* =========================
+   البحث عن الكلمات
+========================= */
+
+function searchWord(){
+
+const input=
+document.getElementById("searchInput");
+
+const result=
+document.getElementById("searchResult");
+
+
+const q=
+(input.value || "")
+.toLowerCase()
+.trim();
+
+
+const words={
+
+"hola":"مرحبا",
+"gracias":"شكرا",
+"por favor":"من فضلك",
+"agua":"ماء",
+"casa":"منزل",
+"trabajo":"عمل",
+"amigo":"صديق",
+"comida":"طعام",
+"tiempo":"وقت",
+"familia":"عائلة"
+
+};
+
+
+result.style.display="block";
+
+
+if(words[q]){
+
+result.innerHTML=
+"<b>"+q+"</b> = "+words[q];
+
+}else{
+
+result.textContent=
+"ما لقيتش هاد الكلمة فالقائمة الحالية.";
+
+}
+
+}
+
+
+/* =========================
+   التمارين
+========================= */
+
+function normalizeText(text){
+
+return(text || "")
+.toLowerCase()
+.normalize("NFD")
+.replace(/[\u0300-\u036f]/g,"")
+.replace(/[¿?¡!.,;:]/g,"")
+.replace(/\s+/g," ")
+.trim();
+
+}
+
+
+function checkAnswer(
+inputId,
+expected,
+feedbackId
+){
+
+const input=
+document.getElementById(inputId);
+
+const feedback=
+document.getElementById(feedbackId);
+
+
+const answer=
+normalizeText(input.value);
+
+const correct=
+normalizeText(expected);
+
+
+if(answer===correct){
+
+feedback.textContent=
+"✅ صحيح!";
+
+}else{
+
+feedback.textContent=
+"❌ حاول مرة أخرى.";
+
+}
+
+}
+
+
+/* =========================
+   الاختبار
+========================= */
+
+function quizAnswer(
+button,
+correct
+){
+
+document
+.querySelectorAll(".quiz-option")
+.forEach(function(btn){
+
+btn.disabled=true;
+
+});
+
+
+const feedback=
+document.getElementById(
+"quizFeedback"
+);
+
+
+if(correct){
+
+feedback.textContent=
+"✅ صحيح! Agua = ماء";
+
+}else{
+
+feedback.textContent=
+"❌ الجواب الصحيح هو: ماء";
+
+}
+
+}
+
+
+/* =========================
+   إيقاف الصوت عند مغادرة الصفحة
+========================= */
+
+window.addEventListener(
+"beforeunload",
+function(){
+
+if("speechSynthesis" in window){
+
+speechSynthesis.cancel();
+
+}
+
+});
+
+
+</script>
+
+</body>
+</html>
